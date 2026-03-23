@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Cravings</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,22 +15,30 @@
       <h1 class="logo">Campus Cravings</h1>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Menu</a></li>
         <li><a href="#about">About</a></li>
+         <li><a href="#services">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Welcome to Campus Cravings</h2>
+  <section id="home" class="home">
+    <div class="home-content">
+      <h2 id="wel"></h2>
       <p>Delicious meals, fresh ingredients, and fast service for ASTU students and visitors.</p>
+      <a href="#contact" class="btn">Order / Contact</a>
        </div>
-    <a href="#contact" class="btn">Order / Contact</a>
+    
   </section>
-
+ <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p >
+      Campus Cravings is a student-friendly food spot inside ASTU Stadium. We focus on fresh ingredients,
+      tasty meals, and quick service to make sure every student and visitor enjoys their dining experience.
+    </p>
+  </section>
   <!-- Menu Section -->
   <section id="services" class="services">
   <h2>Our Menu</h2>
@@ -40,10 +49,12 @@
       <button class="accordion-header">Fast Food</button>
       <div class="accordion-content">
         <ul>
-          <li>Burger – 50 ETB</li>
-          <li>Sandwich – 40 ETB</li>
-          <li>Fries – 25 ETB</li>
-          <li>Wrap – 60 ETB</li>
+      <li><span>Sandwich </span> <span>40 ETB</span></li>
+      <li><span>Chicken Sandwich</span><span>55 ETB</span></li>
+      <li><span>Fries</span><span>25 ETB</span></li>
+      <li><span>Large Fries</span> <span>35 ETB</span> </li>
+      <li><span> Wrap</span> <span>60 ETB</span></li>
+      <li><span>Pizza Slice </span> <span>70 ETB</span></li>
         </ul>
       </div>
     </div>
@@ -53,10 +64,17 @@
       <button class="accordion-header">Local Meals</button>
       <div class="accordion-content">
         <ul>
-          <li>Injera with Shiro – 45 ETB</li>
-          <li>Injera with Wot – 50 ETB</li>
-          <li>Tibs with Injera – 60 ETB</li>
-          <li>Kitfo – 70 ETB</li>
+          <li><span>Shiro </span><span> 45 ETB</span></li>
+          <li><span>Wot </span> <span>50 ETB</span></li>
+          <li><span>Tibs </span> <span>60 ETB</span></li>
+          <li><span>Kitfo </span> <span>70 ETB</span></li>
+      <li><span>Injera with Misir Wot </span> <span>50 ETB</span></li>
+      <li><span>Doro Wot </span> <span>80 ETB</span></li>
+      <li><span>Tibs with Injera </span> <span>60 ETB</span></li>
+      <li><span>Kitfo </span> <span>70 ETB</span></li>
+      <li><span>Firfir </span> <span>40 ETB</span></li>
+      <li><span>Rice with Stew </span><span>55 ETB</span></li>
+      <li><span>Vegetarian Combo </span> <span>50 ETB</span></li>
         </ul>
       </div>
     </div>
@@ -66,10 +84,15 @@
       <button class="accordion-header">Drinks</button>
       <div class="accordion-content">
         <ul>
-          <li>Coffee – 20 ETB</li>
-          <li>Tea – 15 ETB</li>
-          <li>Fresh Juice – 25 ETB</li>
-          <li>Soft Drinks – 15 ETB</li>
+          <li><span>Coffee </span> <span>20 ETB</span></li>
+      <li><span>Tea </span> <span>15 ETB</span></li>
+      <li><span>garlik tea</span><span>20 ETB</span></li>
+      <li><span>Macchiato </span><span>25 ETB</span></li>
+      <li><span>Milk Tea </span> <span>20 ETB</span></li>
+      <li><span>Water </span> <span>10 ETB</span></li>
+      <li><span>Energy Drink</span> <span>40 ETB</span></li>
+      <li><span>Soft Drinks </span> <span>15 ETB</span></li>
+     
         </ul>
       </div>
     </div>
@@ -79,33 +102,27 @@
       <button class="accordion-header">Snacks</button>
       <div class="accordion-content">
         <ul>
-          <li>Chips – 10 ETB</li>
-          <li>Pastries – 15 ETB</li>
-          <li>Samosa – 20 ETB</li>
-          <li>Cookies – 10 ETB</li>
+          <li><span>Chips </span> <span>10 ETB</span></li>
+          <li><span>Pastries </span> <span>15 ETB</span></li>
+          <li><span>Samosa </span> <span>20 ETB</span></li>
+          <li><span>Cookies </span> <span>10 ETB</span></li>
         </ul>
       </div>
     </div>
 
   </div>
 </section>
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      Campus Cravings is a student-friendly food spot inside ASTU Stadium. We focus on fresh ingredients,
-      tasty meals, and quick service to make sure every student and visitor enjoys their dining experience.
-    </p>
-  </section>
+ 
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Location: ASTU Stadium Area, Adama</p>
-    <p>Phone: <a href="tel:+251900000001">+251 900 000 001</a></p>
-    <p>WhatsApp: <a href="https://wa.me/251900000001" target="_blank">Chat Now</a></p>
-    <p>Opening Hours: Monday – Sunday: 8:00 AM – 10:00 PM</p>
-
+    <div class="contact-info">
+    <p>📍 <strong>Location:</strong> ASTU Stadium, Adama</p>
+    <p>📞 <strong>Phone:</strong> <a href="tel:+251900000001">+251 900 000 001</a></p>
+    <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/251900000001" target="_blank">Chat Now</a></p>
+    <p>⏰ <strong>Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+    </div>
     <div class="map-container">
   <iframe
     src="https://www.google.com/maps?q=8.565447,39.294063&z=15&output=embed"
@@ -114,7 +131,10 @@
     style="border:0;"
     loading="lazy">
   </iframe>
-</div>
+</div><!-- Directions Button -->
+  <a href="https://www.google.com/maps?q=8.565447,39.294063" target="_blank" class="btn">
+    Get Directions
+  </a>
   </section>
 
   <!-- Footer -->
@@ -123,6 +143,7 @@
   </footer>
 
   <script src="script.js"></script>
+
 
 </body>
 </html>
