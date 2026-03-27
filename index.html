@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Cravings</title>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">Campus Cravings</h1>
-      <ul class="nav-links">
+    <div class="logo">Campus Cravings</div>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+    <nav class="navbar" id="nav-menu">
+
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-         <li><a href="#services">Menu</a></li>
+        <li><a href="#menu">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -26,112 +32,232 @@
   <section id="home" class="home">
     <div class="home-content">
       <h1>Welcome to Campus Cravings</h1>
-      <p>Delicious meals, fresh ingredients, and fast service for ASTU students and visitors.</p>
-      <a href="#contact" class="btn">Order / Contact</a>
-       </div>
-    
+      <p>Enjoy delicious food, quick service, and a variety of meals all in one place at ASTU Stadium for ASTU students
+        and visitors.</p>
+      <div class="home-features">
+      </div>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn primary">View Menu</a>
+        <a href="#contact" class="btn secondary">Contact Us</a>
+      </div>
+      <div class="home-features">
+        <span>🍔 Fresh Food</span>
+        <span>⚡ Fast Service</span>
+        <span>💰 Affordable</span>
+      </div>
+    </div>
+
   </section>
- <!-- About Section -->
+  <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p >
-      Campus Cravings is a student-friendly food spot inside ASTU Stadium. We focus on fresh ingredients,
-      tasty meals, and quick service to make sure every student and visitor enjoys their dining experience.
-    </p>
+    <div class="about-container">
+
+      <div class="about-text">
+        <p>
+          Campus Cravings is a local food spot located at ASTU Stadium, bringing together a variety of food vendors in
+          one convenient place. We serve students, staff, and visitors with fresh, affordable, and delicious meals every
+          day.
+        </p>
+
+        <p>
+          Whether you're looking for fast food, traditional dishes, or refreshing drinks, our goal is to make sure you
+          enjoy quality food without long waiting times.
+        </p>
+
+        <p>
+          We focus on good service, clean environment, and a comfortable place to relax and enjoy your meal with
+          friends.
+        </p>
+      </div>
+
+      <div class="about-features">
+        <div class="feature">🍔 Variety of Foods</div>
+        <div class="feature">⚡ Fast Service</div>
+        <div class="feature">💰 Affordable Prices</div>
+        <div class="feature">📍 Easy Location</div>
+      </div>
+
+    </div>
   </section>
   <!-- Menu Section -->
-  <section id="services" class="services">
-  <h2>Our Menu</h2>
-  <div class="accordion">
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="accordion">
 
-    <!-- Fast Food -->
-    <div class="accordion-item" style="background: url('images/fastfood.jpg') center/cover no-repeat;">
-      <button class="accordion-header">Fast Food<span class="icon">▼</span></button>
-      <div class="accordion-content">
-        <ul>
-      <li><span>Sandwich </span> <span>40 ETB</span></li>
-      <li><span>Chicken Sandwich</span><span>55 ETB</span></li>
-      <li><span>Fries</span><span>25 ETB</span></li>
-      <li><span>Large Fries</span> <span>35 ETB</span> </li>
-      <li><span> Wrap</span> <span>60 ETB</span></li>
-      <li><span>Pizza Slice </span> <span>70 ETB</span></li>
-        </ul>
+      <!-- Fast Food -->
+      <div class="accordion-item" style="background: url('images/fastfood.jpg') center/cover no-repeat;">
+        <button class="accordion-header">Fast Food<span class="icon">▼</span></button>
+        <div class="accordion-content">
+          <ul>
+            <li><span>Sandwich/Ertib </span> <span>60 ETB</span></li>
+            <li><span>spacial Sandwich</span><span>80 ETB</span></li>
+            <li><span>Fries</span><span>70 ETB</span></li>
+            <li><span>Large Fries</span> <span>100 ETB</span> </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Local Meals -->
-    <div class="accordion-item" style="background: url('images/localmeal.jpg') center/cover no-repeat;">
-      <button class="accordion-header">Local Meals<span class="icon">▼</span></button>
-      <div class="accordion-content">
-        <ul>
-          <li><span>Shiro </span><span> 45 ETB</span></li>
-          <li><span>Wot </span> <span>50 ETB</span></li>
-          <li><span>Tibs </span> <span>60 ETB</span></li>
-          <li><span>Kitfo </span> <span>70 ETB</span></li>
-      <li><span>Injera with Misir Wot </span> <span>50 ETB</span></li>
-      <li><span>Doro Wot </span> <span>80 ETB</span></li>
-      <li><span>Tibs with Injera </span> <span>60 ETB</span></li>
-      <li><span>Kitfo </span> <span>70 ETB</span></li>
-      <li><span>Firfir </span> <span>40 ETB</span></li>
-      <li><span>Rice with Stew </span><span>55 ETB</span></li>
-      <li><span>Vegetarian Combo </span> <span>50 ETB</span></li>
-        </ul>
+      <!-- Local Meals -->
+      <div class="accordion-item" style="background: url('images/localmeal.jpg') center/cover no-repeat;">
+        <button class="accordion-header">Local Meals<span class="icon">▼</span></button>
+        <div class="accordion-content">
+
+
+          <ul>
+
+            <li>
+              <span>
+                Injera (እንጀራ)<br>
+                <small>Traditional Ethiopian flatbread</small>
+              </span>
+              <span>150 ETB</span>
+            </li>
+            <li>
+              <span>
+                Tibs (ጥብስ)<br>
+                <small>Fried beef with spices and vegetables</small>
+              </span>
+              <span>160 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Doro Wat (የዶሮ ወጥ)<br>
+                <small>Traditional spicy chicken stew</small>
+              </span>
+              <span>120 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Kik Wat (msr)<br>
+                <small>Split pea stew with mild spices</small>
+              </span>
+              <span>140 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Shiro (ሽሮ)<br>
+                <small>Chickpea stew, very popular dish</small>
+              </span>
+              <span>120 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Egg Firfir (እንቁላል ፍርፍር)<br>
+                <small>Scrambled egg mixed with injera</small>
+              </span>
+              <span>140 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Firfir Special (ፍርፍር ስፔሻል)<br>
+                <small>Special mix of injera with meat or sauce</small>
+              </span>
+              <span>140 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Firfir with Injera (ፍርፍር በእንጀራ)<br>
+                <small>Served with fresh injera</small>
+              </span>
+              <span>120 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Shiro with Injera (ሽሮ በእንጀራ)<br>
+                <small>Shiro served with injera</small>
+              </span>
+              <span>140 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Shiro with Meat (ሽሮ በስጋ)<br>
+                <small>Shiro mixed with beef</small>
+              </span>
+              <span>140 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Egg with Injera (እንቁላል በእንጀራ)<br>
+                <small>Egg served with injera</small>
+              </span>
+              <span>120 ETB</span>
+            </li>
+
+            <li>
+              <span>
+                Egg with Meat (እንቁላል በስጋ)<br>
+                <small>Egg mixed with beef</small>
+              </span>
+              <span>130 ETB</span>
+            </li>
+
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Drinks -->
-    <div class="accordion-item" style="background: url('images/drinks.jpg') center/cover no-repeat;">
-      <button class="accordion-header">Drinks<span class="icon">▼</span></button>
-      <div class="accordion-content">
-        <ul>
-          <li><span>Coffee </span> <span>20 ETB</span></li>
-      <li><span>Tea </span> <span>15 ETB</span></li>
-      <li><span>garlik tea</span><span>20 ETB</span></li>
-      <li><span>Macchiato </span><span>25 ETB</span></li>
-      <li><span>Milk Tea </span> <span>20 ETB</span></li>
-      <li><span>Water </span> <span>10 ETB</span></li>
-      <li><span>Energy Drink</span> <span>40 ETB</span></li>
-      <li><span>Soft Drinks </span> <span>15 ETB</span></li>
-     
-        </ul>
+      <!-- Drinks -->
+      <div class="accordion-item" style="background: url('images/drinks.jpg') center/cover no-repeat;">
+        <button class="accordion-header">Drinks<span class="icon">▼</span></button>
+        <div class="accordion-content">
+          <ul>
+            <li><span>Coffee </span> <span>35 ETB</span></li>
+            <li><span>Tea </span> <span>20 ETB</span></li>
+            <li><span>Macchiato </span><span>50 ETB</span></li>
+            <li><span>Milk</span> <span>40 ETB</span></li>
+            <li><span>Water 500ml</span> <span>20 ETB</span></li>
+            <li><span>Energy Drink</span> <span>40 ETB</span></li>
+            <li><span>Soft Drinks </span> <span>60 ETB</span></li>
+
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Snacks -->
-    <div class="accordion-item" style="background: url('images/snacks.jpg') center/cover no-repeat;">
-      <button class="accordion-header">Snacks<span class="icon">▼</span></button>
-      <div class="accordion-content">
-        <ul>
-          <li><span>Chips </span> <span>10 ETB</span></li>
-          <li><span>Pastries </span> <span>15 ETB</span></li>
-          <li><span>Samosa </span> <span>20 ETB</span></li>
-          <li><span>Cookies </span> <span>10 ETB</span></li>
-        </ul>
+      <!-- Snacks -->
+      <div class="accordion-item" style="background: url('images/snacks.jpg') center/cover no-repeat;">
+        <button class="accordion-header">Snacks<span class="icon">▼</span></button>
+        <div class="accordion-content">
+          <ul>
+            <li><span>Chips </span> <span>30 ETB</span></li>
+            <li><span>Pastries </span> <span>50 ETB</span></li>
+            <li><span>Samosa </span> <span>25 ETB</span></li>
+            <li><span>Cookies </span> <span>50 ETB</span></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-  </div>
-</section>
- 
+    </div>
+  </section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <div class="contact-info">
-    <p>📍 <strong>Location:</strong> ASTU Stadium, Adama</p>
-    <p>📞 <strong>Phone:</strong> <a href="tel:+251900000001">+251 900 000 001</a></p>
-    <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/251900000001" target="_blank">Chat Now</a></p>
-    <p>⏰ <strong>Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>📍 <strong>Location:</strong> ASTU Stadium, Adama</p>
+        <p>📞 <strong>Phone:</strong> <a href="tel:+251931357208">+251 900 000 001</a></p>
+        <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/251931357208" target="_blank">Chat Now</a></p>
+        <p>📧<strong>Email:</strong> <a href="#">campuscravings@gmail.com</a></p>
+        <p>⏰ <strong>Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7890.625906095442!2d39.29331124404144!3d8.565876259410397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzMnNTMuOCJOIDM5wrAxNyczOC45IkU!5e0!3m2!1sen!2set!4v1774629637958!5m2!1sen!2set"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" width="100%" height="200" style="border:0;" loading="lazy">
+        </iframe>
+      </div>
     </div>
-    <div class="map-container">
-  <iframe
-    src="https://www.google.com/maps?q=8.565447,39.294063&z=15&output=embed"
-    width="100%"
-    height="300"
-    style="border:0;"
-    loading="lazy">
-  </iframe>
-</div>
   </section>
 
   <!-- Footer -->
@@ -143,4 +269,5 @@
 
 
 </body>
+
 </html>
