@@ -1,34 +1,27 @@
-// Wait until DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-  // --- TYPEWRITER ---
-  const typewriter = new Typewriter('#wel', {
-    strings: ['Welcome to Campus Cravings'],
-    autoStart: true,
-    loop: true,
-    delay: 75, // Optional: typing speed
-    deleteSpeed: 50
-  });
+<script>
+const headers = document.querySelectorAll('.accordion-header');
 
-  // --- ACCORDION ---
-  const headers = document.querySelectorAll('.accordion-header');
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
 
-  headers.forEach(header => {
-    header.addEventListener('click', () => {
-      const content = header.nextElementSibling;
-
-      // Collapse all other items
-      document.querySelectorAll('.accordion-content').forEach(c => {
-        if (c !== content) {
-          c.style.maxHeight = null;
-        }
-      });
-
-      // Toggle current
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+    // close others
+    document.querySelectorAll('.accordion-content').forEach(c => {
+      if (c !== content) c.style.maxHeight = null;
     });
+
+    document.querySelectorAll('.accordion-header').forEach(h => {
+      if (h !== header) h.classList.remove('active');
+    });
+
+    // toggle current
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      header.classList.remove('active');
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      header.classList.add('active');
+    }
   });
 });
+</script>
