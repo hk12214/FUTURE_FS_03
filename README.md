@@ -1,16 +1,14 @@
-# Campus Cravings Website 🍔
+# 🍔 Campus Cravings Website
 
-**A student-friendly food website for Campus Cravings at ASTU Stadium**  
-Built as part of **Future Interns Task 3 – Full Stack Web Development** to provide a real-world online presence for a local business.
-
+**A student-focused digital platform for Campus Cravings at ASTU Stadium. Developed as part of the Future Interns Task 3 – Full Stack Web Development.
 ---
 
 ## 🎯 Project Objective
-- Provide Campus Cravings with a **professional online presence**.  
-- Make the **menu, contact info, and location** easily accessible.  
-- Increase **customer convenience, trust, and engagement**.  
-- Demonstrate real-world web development skills and portfolio-ready work.
 
+- Professional Presence: Establish a dedicated online landing page for a local ASTU business.
+- Accessibility: Provide instant access to the menu, contact details, and physical location.
+- User Experience: Increase customer convenience and trust through a modern, mobile-responsive interface.
+- Portfolio Ready: Demonstrate real-world front-end development and UI/UX design skills.
 ---
 
 ## 💻 Features
@@ -49,6 +47,4 @@ cd FUTURE_FS_03
 Open index.html in a browser (static site, no backend required).
 Can be deployed on Netlify, Vercel, or GitHub Pages for live preview.
 📌 Impact
-Helps Campus Cravings attract more students and visitors.
-Improves online credibility and engagement.
-Provides hands-on experience in delivering real-world client value.
+This project transforms a traditional local eatery into a digitally accessible brand, helping Campus Cravings attract more students, reduce ordering friction, and build lasting credibility within the ASTU community.
