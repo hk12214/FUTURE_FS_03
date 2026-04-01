@@ -46,6 +46,7 @@ Bash
 cd FUTURE_FS_03
 Open index.html in a browser (static site, no backend required).
 Can be deployed on Netlify, Vercel, or GitHub Pages for live preview.
+```
 📌 Impact
 This project transforms a traditional local eatery into a digitally accessible brand,
 helping Campus Cravings attract more students,
